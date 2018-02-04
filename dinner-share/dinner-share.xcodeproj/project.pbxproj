@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D03BD4E2026643E0049BA99 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD4D2026643E0049BA99 /* AddUserViewController.swift */; };
+		4D03BD5020266EA70049BA99 /* ShowProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD4F20266EA70049BA99 /* ShowProfileViewController.swift */; };
+		4D03BD5220266ECA0049BA99 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD5120266ECA0049BA99 /* User.swift */; };
+		4D03BD56202690E60049BA99 /* person-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D03BD55202690E60049BA99 /* person-placeholder.jpg */; };
 		C1A9E5D420265DD70043E136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5D320265DD70043E136 /* AppDelegate.swift */; };
 		C1A9E5D620265DD70043E136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5D520265DD70043E136 /* ViewController.swift */; };
 		C1A9E5D920265DD70043E136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A9E5D720265DD70043E136 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D03BD4D2026643E0049BA99 /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
+		4D03BD4F20266EA70049BA99 /* ShowProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowProfileViewController.swift; sourceTree = "<group>"; };
+		4D03BD5120266ECA0049BA99 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4D03BD55202690E60049BA99 /* person-placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "person-placeholder.jpg"; sourceTree = "<group>"; };
 		C1A9E5D020265DD70043E136 /* dinner-share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dinner-share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A9E5D320265DD70043E136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1A9E5D520265DD70043E136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,12 +62,16 @@
 		C1A9E5D220265DD70043E136 /* dinner-share */ = {
 			isa = PBXGroup;
 			children = (
+				4D03BD4F20266EA70049BA99 /* ShowProfileViewController.swift */,
 				C1A9E5D320265DD70043E136 /* AppDelegate.swift */,
 				C1A9E5D520265DD70043E136 /* ViewController.swift */,
 				C1A9E5D720265DD70043E136 /* Main.storyboard */,
+				4D03BD5120266ECA0049BA99 /* User.swift */,
+				4D03BD4D2026643E0049BA99 /* AddUserViewController.swift */,
 				C1A9E5DA20265DD70043E136 /* Assets.xcassets */,
 				C1A9E5DC20265DD70043E136 /* LaunchScreen.storyboard */,
 				C1A9E5DF20265DD70043E136 /* Info.plist */,
+				4D03BD55202690E60049BA99 /* person-placeholder.jpg */,
 			);
 			path = "dinner-share";
 			sourceTree = "<group>";
@@ -123,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D03BD56202690E60049BA99 /* person-placeholder.jpg in Resources */,
 				C1A9E5DE20265DD70043E136 /* LaunchScreen.storyboard in Resources */,
 				C1A9E5DB20265DD70043E136 /* Assets.xcassets in Resources */,
 				C1A9E5D920265DD70043E136 /* Main.storyboard in Resources */,
@@ -137,7 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1A9E5D620265DD70043E136 /* ViewController.swift in Sources */,
+				4D03BD4E2026643E0049BA99 /* AddUserViewController.swift in Sources */,
 				C1A9E5D420265DD70043E136 /* AppDelegate.swift in Sources */,
+				4D03BD5220266ECA0049BA99 /* User.swift in Sources */,
+				4D03BD5020266EA70049BA99 /* ShowProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
