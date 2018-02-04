@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/chriswang/Desktop/dinner-share/dinner-share/dinner-share/FindMealTableViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:dinner-share.xcodeproj">
    </FileRef>
    <FileRef

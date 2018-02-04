@@ -10,8 +10,8 @@
 		1480A2FA20269F530083B792 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1480A2F920269F530083B792 /* GoogleService-Info.plist */; };
 		4D03BD5A202696440049BA99 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD57202696430049BA99 /* AddUserViewController.swift */; };
 		4D03BD5C202696440049BA99 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD59202696440049BA99 /* User.swift */; };
-		4D03BD6320269C4F0049BA99 /* VictorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D03BD6120269C4F0049BA99 /* VictorStoryboard.storyboard */; };
 		4D03BD6520269C670049BA99 /* person-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D03BD6420269C670049BA99 /* person-placeholder.jpg */; };
+		C1828F7F2026E37A006EC7AC /* FindMealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1828F7E2026E37A006EC7AC /* FindMealTableViewController.swift */; };
 		C1A9E5D420265DD70043E136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5D320265DD70043E136 /* AppDelegate.swift */; };
 		C1A9E5D620265DD70043E136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5D520265DD70043E136 /* ViewController.swift */; };
 		C1A9E5D920265DD70043E136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A9E5D720265DD70043E136 /* Main.storyboard */; };
@@ -29,11 +29,11 @@
 		4D03BD57202696430049BA99 /* AddUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 		4D03BD58202696440049BA99 /* ShowProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProfileViewController.swift; sourceTree = "<group>"; };
 		4D03BD59202696440049BA99 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		4D03BD6220269C4F0049BA99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/VictorStoryboard.storyboard; sourceTree = "<group>"; };
 		4D03BD6420269C670049BA99 /* person-placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "person-placeholder.jpg"; sourceTree = "<group>"; };
 		4E1F89912566BF0EE1D873A2 /* Pods_dinner_share.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dinner_share.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D5531D7FF9089445C72218 /* Pods-dinner-share.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinner-share.release.xcconfig"; path = "Pods/Target Support Files/Pods-dinner-share/Pods-dinner-share.release.xcconfig"; sourceTree = "<group>"; };
 		9E420FB394A8829105C4B02C /* Pods-dinner-share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinner-share.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dinner-share/Pods-dinner-share.debug.xcconfig"; sourceTree = "<group>"; };
+		C1828F7E2026E37A006EC7AC /* FindMealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FindMealTableViewController.swift; path = "/Users/chriswang/Desktop/dinner-share/dinner-share/dinner-share/FindMealTableViewController.swift"; sourceTree = "<absolute>"; };
 		C1A9E5D020265DD70043E136 /* dinner-share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dinner-share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A9E5D320265DD70043E136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1A9E5D520265DD70043E136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				1480A2F920269F530083B792 /* GoogleService-Info.plist */,
+				C1828F7E2026E37A006EC7AC /* FindMealTableViewController.swift */,
 				C1A9E5D320265DD70043E136 /* AppDelegate.swift */,
 				C1A9E5D520265DD70043E136 /* ViewController.swift */,
 				C1A9E5D720265DD70043E136 /* Main.storyboard */,
@@ -107,7 +108,6 @@
 				C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */,
 				4D03BD57202696430049BA99 /* AddUserViewController.swift */,
 				4D03BD58202696440049BA99 /* ShowProfileViewController.swift */,
-				4D03BD6120269C4F0049BA99 /* VictorStoryboard.storyboard */,
 				4D03BD59202696440049BA99 /* User.swift */,
 				C1A9E5DA20265DD70043E136 /* Assets.xcassets */,
 				C1A9E5DC20265DD70043E136 /* LaunchScreen.storyboard */,
@@ -181,7 +181,6 @@
 			files = (
 				C1A9E5DE20265DD70043E136 /* LaunchScreen.storyboard in Resources */,
 				C1A9E5DB20265DD70043E136 /* Assets.xcassets in Resources */,
-				4D03BD6320269C4F0049BA99 /* VictorStoryboard.storyboard in Resources */,
 				4D03BD6520269C670049BA99 /* person-placeholder.jpg in Resources */,
 				C1A9E5D920265DD70043E136 /* Main.storyboard in Resources */,
 				1480A2FA20269F530083B792 /* GoogleService-Info.plist in Resources */,
@@ -260,6 +259,7 @@
 				4D03BD5C202696440049BA99 /* User.swift in Sources */,
 				4D03BD5A202696440049BA99 /* AddUserViewController.swift in Sources */,
 				C1A9E5E8202664FF0043E136 /* HomeViewController.swift in Sources */,
+				C1828F7F2026E37A006EC7AC /* FindMealTableViewController.swift in Sources */,
 				C1A9E5D420265DD70043E136 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,14 +267,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4D03BD6120269C4F0049BA99 /* VictorStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D03BD6220269C4F0049BA99 /* Base */,
-			);
-			name = VictorStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
 		C1A9E5D720265DD70043E136 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
