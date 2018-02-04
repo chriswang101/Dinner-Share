@@ -34,8 +34,19 @@ class HomeTableViewController: UITableViewController {
         Meal(imageName: "pizza.jpg", date: Date(timeIntervalSinceNow: 90000), description: "PIZZA!", distance: 1.3)
     ]
     
-    func populatePageVCs(VCs: [UIViewController], meals: Meal) {
-        
+    func populatePageVCs(VCs: [UIViewController], meals: [Meal]) {
+        for meal in meals {
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier) as! PageContentViewController
+            //vc.delegate = self
+            
+            vc.loadView()
+            
+            vc.imageView = UIImage
+            vc.descriptionLabel.text =
+            
+            vc.location = CLLocation(latitude: latitude, longitude: longitude)
+            pageViewVCs.append(vc)
+        }
     }
     
     override func viewDidLoad() {

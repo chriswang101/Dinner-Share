@@ -529,9 +529,10 @@
                     </view>
                     <size key="freeformSize" width="375" height="275"/>
                     <connections>
-                        <outlet property="descriptionLabel" destination="5gy-k3-tGe" id="e74-NF-Axu"/>
+                        <outlet property="dateLabel" destination="5gy-k3-tGe" id="S0u-P3-0IF"/>
+                        <outlet property="descriptionLabel" destination="Obg-nq-h8n" id="SRf-xI-nZc"/>
+                        <outlet property="distanceLabel" destination="PsR-bM-Jks" id="auo-Eh-V1a"/>
                         <outlet property="imageView" destination="UPi-S0-RLR" id="2WM-IA-9D9"/>
-                        <outlet property="titleLabel" destination="Obg-nq-h8n" id="eiA-OI-XgJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccV-4L-cuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
