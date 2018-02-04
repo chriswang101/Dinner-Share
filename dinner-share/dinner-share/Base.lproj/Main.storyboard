@@ -312,7 +312,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Lr7-qo-tMG" kind="show" id="5zx-ze-Xfe"/>
+                                    <segue destination="Xnk-ln-UPd" kind="show" id="RXg-qF-Wo1"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="italiano" translatesAutoresizingMaskIntoConstraints="NO" id="hAi-bR-JuR">
@@ -336,6 +336,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Lr7-qo-tMG" kind="show" id="MOh-RC-Y89"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dinner Share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4r-gy-5I2">
                                 <rect key="frame" x="50" y="285" width="275" height="53.5"/>
@@ -364,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEh-O5-pOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2887" y="501"/>
+            <point key="canvasLocation" x="-3022" y="501"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bWp-ei-lCD">
@@ -571,9 +574,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1F-hF-Asb">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1F-hF-Asb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Create your profile" id="TNC-Ca-P5t">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="XfM-LF-2u9">
@@ -591,15 +593,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b3u-F8-tsd">
-                                <rect key="frame" x="150.5" y="295" width="74" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="street-address"/>
-                                <connections>
-                                    <outlet property="delegate" destination="Xnk-ln-UPd" id="5Pw-ud-Y7y"/>
-                                </connections>
-                            </textField>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="260" placeholderIntrinsicHeight="260" image="person-placeholder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XVh-ea-VIy">
                                 <rect key="frame" x="112" y="60" width="150" height="150"/>
                                 <gestureRecognizers/>
@@ -611,24 +604,46 @@
                                     <outletCollection property="gestureRecognizers" destination="h4B-m3-63F" appends="YES" id="gKg-au-x57"/>
                                 </connections>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t1x-ji-Rs6">
-                                <rect key="frame" x="158" y="233" width="59" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t1x-ji-Rs6">
+                                <rect key="frame" x="15" y="381" width="345" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="oHE-ae-mvX"/>
+                                </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                                 <connections>
                                     <outlet property="delegate" destination="Xnk-ln-UPd" id="B0j-C9-YpT"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jn-YK-Mlm">
+                                <rect key="frame" x="50" y="352" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b3u-F8-tsd">
+                                <rect key="frame" x="169" y="365" width="74" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="street-address"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Xnk-ln-UPd" id="5Pw-ud-Y7y"/>
                                 </connections>
                             </textField>
                         </subviews>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="XVh-ea-VIy" firstAttribute="top" secondItem="5Il-ZV-ip6" secondAttribute="top" constant="40" id="82a-un-YDA"/>
+                            <constraint firstItem="e1F-hF-Asb" firstAttribute="top" secondItem="0oD-6A-kKF" secondAttribute="top" id="857-sj-ECo"/>
                             <constraint firstItem="b3u-F8-tsd" firstAttribute="top" secondItem="5Il-ZV-ip6" secondAttribute="top" constant="275" id="9Hs-td-xyq"/>
-                            <constraint firstItem="t1x-ji-Rs6" firstAttribute="top" secondItem="5Il-ZV-ip6" secondAttribute="top" constant="213" id="b4V-iF-enN"/>
-                            <constraint firstItem="t1x-ji-Rs6" firstAttribute="centerX" secondItem="5Il-ZV-ip6" secondAttribute="centerX" id="mqZ-II-bKr"/>
+                            <constraint firstItem="t1x-ji-Rs6" firstAttribute="leading" secondItem="5Il-ZV-ip6" secondAttribute="leading" constant="15" id="ZBR-y5-uMU"/>
+                            <constraint firstItem="e1F-hF-Asb" firstAttribute="trailing" secondItem="5Il-ZV-ip6" secondAttribute="trailing" id="dOH-Mz-D3y"/>
+                            <constraint firstItem="e1F-hF-Asb" firstAttribute="leading" secondItem="5Il-ZV-ip6" secondAttribute="leading" id="fVH-oa-5sf"/>
                             <constraint firstItem="b3u-F8-tsd" firstAttribute="centerX" secondItem="5Il-ZV-ip6" secondAttribute="centerX" id="pQh-cb-YZF"/>
                             <constraint firstItem="XVh-ea-VIy" firstAttribute="centerX" secondItem="5Il-ZV-ip6" secondAttribute="centerX" id="r23-GZ-z9u"/>
+                            <constraint firstItem="5Il-ZV-ip6" firstAttribute="trailing" secondItem="t1x-ji-Rs6" secondAttribute="trailing" constant="15" id="uRg-zc-b39"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Il-ZV-ip6"/>
                     </view>
@@ -647,7 +662,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2220" y="-174"/>
+            <point key="canvasLocation" x="-2127.1999999999998" y="135.38230884557723"/>
         </scene>
         <!--Show Profile View Controller-->
         <scene sceneID="j9c-pm-a9V">
@@ -702,7 +717,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYp-pn-IrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="MeM-GU-jbf"/>
             </objects>
-            <point key="canvasLocation" x="-1390" y="-172"/>
+            <point key="canvasLocation" x="-1346" y="-172"/>
         </scene>
     </scenes>
     <resources>
