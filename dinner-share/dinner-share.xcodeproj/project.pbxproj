@@ -12,7 +12,6 @@
 		C1A9E5D920265DD70043E136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A9E5D720265DD70043E136 /* Main.storyboard */; };
 		C1A9E5DB20265DD70043E136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A9E5DA20265DD70043E136 /* Assets.xcassets */; };
 		C1A9E5DE20265DD70043E136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A9E5DC20265DD70043E136 /* LaunchScreen.storyboard */; };
-		C1A9E5E6202664A80043E136 /* FindMealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5E5202664A80043E136 /* FindMealTableViewController.swift */; };
 		C1A9E5E8202664FF0043E136 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5E7202664FF0043E136 /* HomeViewController.swift */; };
 		C1A9E5EA2026669B0043E136 /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5E92026669B0043E136 /* AddMealViewController.swift */; };
 		C1A9E5EC20267A100043E136 /* AddMealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */; };
@@ -26,7 +25,6 @@
 		C1A9E5DA20265DD70043E136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1A9E5DD20265DD70043E136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1A9E5DF20265DD70043E136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1A9E5E5202664A80043E136 /* FindMealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMealTableViewController.swift; sourceTree = "<group>"; };
 		C1A9E5E7202664FF0043E136 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C1A9E5E92026669B0043E136 /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
 		C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealTableViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 				C1A9E5D720265DD70043E136 /* Main.storyboard */,
 				C1A9E5E92026669B0043E136 /* AddMealViewController.swift */,
 				C1A9E5E7202664FF0043E136 /* HomeViewController.swift */,
-				C1A9E5E5202664A80043E136 /* FindMealTableViewController.swift */,
 				C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */,
 				C1A9E5DA20265DD70043E136 /* Assets.xcassets */,
 				C1A9E5DC20265DD70043E136 /* LaunchScreen.storyboard */,
@@ -150,7 +147,6 @@
 			files = (
 				C1A9E5EC20267A100043E136 /* AddMealTableViewController.swift in Sources */,
 				C1A9E5D620265DD70043E136 /* ViewController.swift in Sources */,
-				C1A9E5E6202664A80043E136 /* FindMealTableViewController.swift in Sources */,
 				C1A9E5EA2026669B0043E136 /* AddMealViewController.swift in Sources */,
 				C1A9E5D420265DD70043E136 /* AppDelegate.swift in Sources */,
 				C1A9E5E8202664FF0043E136 /* HomeViewController.swift in Sources */,
