@@ -327,7 +327,7 @@
         <!--Home-->
         <scene sceneID="Qx2-6N-8Fs">
             <objects>
-                <tableViewController id="aDK-M1-AJm" sceneMemberID="viewController">
+                <tableViewController id="aDK-M1-AJm" customClass="HomeTableViewController" customModule="dinner_share" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mfZ-pz-bmZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -458,6 +458,11 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Home" id="4sA-jY-0AE"/>
                     <navigationItem key="navigationItem" id="Fjg-S9-jJB"/>
+                    <connections>
+                        <outlet property="nearYouScrollView" destination="Fge-Le-4FT" id="Gf1-oe-C9m"/>
+                        <outlet property="recommendationsScrollView" destination="9HF-o1-Gua" id="ZC6-Oz-2PR"/>
+                        <outlet property="topRatedScrollView" destination="QOf-WZ-7fG" id="Qzh-S7-7eL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brn-yy-5V7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -488,7 +493,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DICKER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gy-k3-tGe">
-                                <rect key="frame" x="10" y="252" width="355" height="18"/>
+                                <rect key="frame" x="10" y="252" width="160" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="PbL-OM-WqS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DICKER" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsR-bM-Jks">
+                                <rect key="frame" x="205" y="252" width="160" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="imh-4V-TpT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -503,8 +520,10 @@
                             <constraint firstItem="UPi-S0-RLR" firstAttribute="top" secondItem="r37-wH-Qlz" secondAttribute="top" id="8V2-KM-OwL"/>
                             <constraint firstItem="UPi-S0-RLR" firstAttribute="leading" secondItem="r37-wH-Qlz" secondAttribute="leading" id="A6c-LU-41D"/>
                             <constraint firstItem="UPi-S0-RLR" firstAttribute="trailing" secondItem="r37-wH-Qlz" secondAttribute="trailing" id="AMT-TM-AHS"/>
+                            <constraint firstItem="r37-wH-Qlz" firstAttribute="trailing" secondItem="PsR-bM-Jks" secondAttribute="trailing" constant="10" id="RbQ-Re-OC7"/>
+                            <constraint firstItem="r37-wH-Qlz" firstAttribute="bottom" secondItem="PsR-bM-Jks" secondAttribute="bottom" constant="5" id="c0h-KR-h7m"/>
+                            <constraint firstItem="PsR-bM-Jks" firstAttribute="top" secondItem="Obg-nq-h8n" secondAttribute="bottom" constant="1" id="mhT-Z2-ipn"/>
                             <constraint firstItem="Obg-nq-h8n" firstAttribute="leading" secondItem="r37-wH-Qlz" secondAttribute="leading" constant="10" id="oRt-xD-QS4"/>
-                            <constraint firstItem="r37-wH-Qlz" firstAttribute="trailing" secondItem="5gy-k3-tGe" secondAttribute="trailing" constant="10" id="s2S-m7-1Qz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r37-wH-Qlz"/>
                     </view>
@@ -522,7 +541,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1606" y="1383"/>
+            <point key="canvasLocation" x="-444" y="1448.7256371814094"/>
         </scene>
         <!--Add User View Controller-->
         <scene sceneID="Dld-5S-WnI">

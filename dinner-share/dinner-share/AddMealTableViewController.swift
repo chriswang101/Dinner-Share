@@ -28,7 +28,7 @@ class AddMealTableViewController: UITableViewController {
         // Initialize button and add to bottom of tableView
         button = UIButton(frame: CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50))
         button.setTitle("Done", for: .normal)
-        button.setTitleColor(UIColor.black, for: .normal)
+        button.setTitleColor(themeColorRed, for: .normal)
         self.navigationController?.view.addSubview(button)
         
         mealNameTextField.setBottomBorder()
@@ -86,15 +86,4 @@ extension AddMealTableViewController: UIPickerViewDataSource {
     }
 }
 
-extension UITextField {
-    func setBottomBorder() {
-        self.borderStyle = .none
-        self.layer.backgroundColor = UIColor.white.cgColor
-        
-        self.layer.masksToBounds = false
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOffset = CGSize(width: 0.0, height: 1.5)
-        self.layer.shadowOpacity = 1.0
-        self.layer.shadowRadius = 0.0
-    }
-}
+
