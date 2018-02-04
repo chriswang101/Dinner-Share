@@ -650,7 +650,7 @@
         <!--Show Profile View Controller-->
         <scene sceneID="j9c-pm-a9V">
             <objects>
-                <viewController id="dwb-bv-hoA" customClass="ShowProfileViewController" customModule="dinner_share" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowProfileViewController" id="dwb-bv-hoA" customClass="ShowProfileViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fMt-et-fPY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
