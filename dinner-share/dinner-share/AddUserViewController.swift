@@ -101,8 +101,8 @@ class AddUserViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         if segue.identifier == SegueIDs.saveSegue {
             
             
-            let destVC = segue.destination as! ShowProfileViewController
-            destVC.profile = User(name: nameTextField.text!, address: addressTextField.text!, image: profileImage.image!)
+            //let destVC = segue.destination as! ShowProfileViewController
+            //destVC.profile = User(name: nameTextField.text!, address: addressTextField.text!, image: profileImage.image!)
         }
         
         // Get the new view controller using segue.destinationViewController.
