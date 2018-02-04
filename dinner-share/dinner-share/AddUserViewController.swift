@@ -25,7 +25,8 @@ class AddUserViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         
         updateSaveButtonState()
 
-        // Do any additional setup after loading the view.
+        nameTextField.setBottomBorder()
+        addressTextField.setBottomBorder()
     }
 
     override func didReceiveMemoryWarning() {

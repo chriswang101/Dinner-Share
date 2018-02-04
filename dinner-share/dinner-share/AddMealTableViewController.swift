@@ -18,17 +18,7 @@ class AddMealTableViewController: UITableViewController {
     
     let peoplePickerNumbers = ["1","2","3","4","5","6","7","8","9"]
     
-    var numberOfPeople: Int
-    
     var button: UIButton! = nil
-    
-    func enterButtonPressed() {
-        // Take all data user entered and store it in firebase
-        print(mealNameTextField.text)
-        print(totalCostTextField.text)
-        // store numberOfPeople in firebase
-        print(numberOfPeople)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,7 +68,7 @@ class AddMealTableViewController: UITableViewController {
 
 extension AddMealTableViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        numberOfPeople = row + 1
+        
     }
 }
 
