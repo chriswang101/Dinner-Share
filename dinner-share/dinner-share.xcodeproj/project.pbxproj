@@ -10,6 +10,8 @@
 		4D03BD5A202696440049BA99 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD57202696430049BA99 /* AddUserViewController.swift */; };
 		4D03BD5B202696440049BA99 /* ShowProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD58202696440049BA99 /* ShowProfileViewController.swift */; };
 		4D03BD5C202696440049BA99 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD59202696440049BA99 /* User.swift */; };
+		4D03BD6320269C4F0049BA99 /* VictorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D03BD6120269C4F0049BA99 /* VictorStoryboard.storyboard */; };
+		4D03BD6520269C670049BA99 /* person-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D03BD6420269C670049BA99 /* person-placeholder.jpg */; };
 		C1A9E5D420265DD70043E136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5D320265DD70043E136 /* AppDelegate.swift */; };
 		C1A9E5D620265DD70043E136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5D520265DD70043E136 /* ViewController.swift */; };
 		C1A9E5D920265DD70043E136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A9E5D720265DD70043E136 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		4D03BD57202696430049BA99 /* AddUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 		4D03BD58202696440049BA99 /* ShowProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProfileViewController.swift; sourceTree = "<group>"; };
 		4D03BD59202696440049BA99 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4D03BD6220269C4F0049BA99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/VictorStoryboard.storyboard; sourceTree = "<group>"; };
+		4D03BD6420269C670049BA99 /* person-placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "person-placeholder.jpg"; sourceTree = "<group>"; };
 		C1A9E5D020265DD70043E136 /* dinner-share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dinner-share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A9E5D320265DD70043E136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1A9E5D520265DD70043E136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,10 +78,12 @@
 				C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */,
 				4D03BD57202696430049BA99 /* AddUserViewController.swift */,
 				4D03BD58202696440049BA99 /* ShowProfileViewController.swift */,
+				4D03BD6120269C4F0049BA99 /* VictorStoryboard.storyboard */,
 				4D03BD59202696440049BA99 /* User.swift */,
 				C1A9E5DA20265DD70043E136 /* Assets.xcassets */,
 				C1A9E5DC20265DD70043E136 /* LaunchScreen.storyboard */,
 				C1A9E5DF20265DD70043E136 /* Info.plist */,
+				4D03BD6420269C670049BA99 /* person-placeholder.jpg */,
 			);
 			path = "dinner-share";
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 			files = (
 				C1A9E5DE20265DD70043E136 /* LaunchScreen.storyboard in Resources */,
 				C1A9E5DB20265DD70043E136 /* Assets.xcassets in Resources */,
+				4D03BD6320269C4F0049BA99 /* VictorStoryboard.storyboard in Resources */,
+				4D03BD6520269C670049BA99 /* person-placeholder.jpg in Resources */,
 				C1A9E5D920265DD70043E136 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +175,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4D03BD6120269C4F0049BA99 /* VictorStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D03BD6220269C4F0049BA99 /* Base */,
+			);
+			name = VictorStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 		C1A9E5D720265DD70043E136 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
