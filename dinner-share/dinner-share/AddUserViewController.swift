@@ -35,8 +35,10 @@ class AddUserViewController: UIViewController, UITextFieldDelegate, UIImagePicke
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print(1)
         
         if textField === addressTextField {
+            print(2)
             textField.resignFirstResponder()
             
             //Update save button if we have valid text
@@ -102,8 +104,8 @@ class AddUserViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         if segue.identifier == SegueIDs.saveSegue {
             
             
-            //let destVC = segue.destination as! ShowProfileViewController
-            //destVC.profile = User(name: nameTextField.text!, address: addressTextField.text!, image: profileImage.image!)
+            let destVC = segue.destination as! ShowProfileViewController
+            destVC.profile = User(name: nameTextField.text!, address: addressTextField.text!, image: profileImage.image!)
         }
         
         // Get the new view controller using segue.destinationViewController.
@@ -111,9 +113,9 @@ class AddUserViewController: UIViewController, UITextFieldDelegate, UIImagePicke
     }
     
     private func updateSaveButtonState() {
-        let text1 = nameTextField.text ?? ""
-        let text2 = addressTextField.text ?? ""
-        saveButton.isEnabled = !text1.isEmpty && !text2.isEmpty
+//        let text1 = nameTextField.text ?? ""
+//        let text2 = addressTextField.text ?? ""
+        saveButton.isEnabled = nameTextField.hasText && addressTextField.hasText
     }
  
 

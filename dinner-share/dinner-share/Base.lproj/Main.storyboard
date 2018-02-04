@@ -539,6 +539,9 @@
                                     <constraint firstAttribute="width" constant="150" id="jO2-Bh-buX"/>
                                     <constraint firstAttribute="height" constant="150" id="pQh-Gl-ZLg"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fTP-Fp-GHZ" appends="YES" id="Bz9-mp-XpW"/>
+                                </connections>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D1J-GN-6Qq">
                                 <rect key="frame" x="15" y="294" width="345" height="45"/>
@@ -548,6 +551,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Xnk-ln-UPd" id="3pt-tt-kU2"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtG-8W-bLJ">
                                 <rect key="frame" x="15" y="279" width="345" height="15"/>
@@ -567,6 +573,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Xnk-ln-UPd" id="fdA-VC-7S9"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIY-IA-vAv">
                                 <rect key="frame" x="15" y="364" width="345" height="15"/>
@@ -630,6 +639,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38g-KM-jsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="PUN-Yh-YVg" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="fTP-Fp-GHZ">
+                    <connections>
+                        <action selector="choosePhotoFromLibrary:" destination="Xnk-ln-UPd" id="yHg-UW-R7k"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-2127.1999999999998" y="135.38230884557723"/>
         </scene>
@@ -679,6 +693,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="KAx-qz-wkb" firstAttribute="trailing" secondItem="LeQ-2h-ssA" secondAttribute="trailing" id="CNN-6f-GD4"/>
