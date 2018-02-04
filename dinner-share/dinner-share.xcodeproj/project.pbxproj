@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D03BD5A202696440049BA99 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD57202696430049BA99 /* AddUserViewController.swift */; };
+		4D03BD5B202696440049BA99 /* ShowProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD58202696440049BA99 /* ShowProfileViewController.swift */; };
+		4D03BD5C202696440049BA99 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD59202696440049BA99 /* User.swift */; };
 		C1A9E5D420265DD70043E136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5D320265DD70043E136 /* AppDelegate.swift */; };
 		C1A9E5D620265DD70043E136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5D520265DD70043E136 /* ViewController.swift */; };
 		C1A9E5D920265DD70043E136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A9E5D720265DD70043E136 /* Main.storyboard */; };
 		C1A9E5DB20265DD70043E136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A9E5DA20265DD70043E136 /* Assets.xcassets */; };
 		C1A9E5DE20265DD70043E136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A9E5DC20265DD70043E136 /* LaunchScreen.storyboard */; };
+		C1A9E5E6202664A80043E136 /* FindMealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5E5202664A80043E136 /* FindMealTableViewController.swift */; };
+		C1A9E5E8202664FF0043E136 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5E7202664FF0043E136 /* HomeViewController.swift */; };
+		C1A9E5EA2026669B0043E136 /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5E92026669B0043E136 /* AddMealViewController.swift */; };
+		C1A9E5EC20267A100043E136 /* AddMealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D03BD57202696430049BA99 /* AddUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
+		4D03BD58202696440049BA99 /* ShowProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProfileViewController.swift; sourceTree = "<group>"; };
+		4D03BD59202696440049BA99 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C1A9E5D020265DD70043E136 /* dinner-share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dinner-share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A9E5D320265DD70043E136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1A9E5D520265DD70043E136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,10 @@
 		C1A9E5DA20265DD70043E136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1A9E5DD20265DD70043E136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1A9E5DF20265DD70043E136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A9E5E5202664A80043E136 /* FindMealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMealTableViewController.swift; sourceTree = "<group>"; };
+		C1A9E5E7202664FF0043E136 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C1A9E5E92026669B0043E136 /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
+		C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,13 @@
 				C1A9E5D320265DD70043E136 /* AppDelegate.swift */,
 				C1A9E5D520265DD70043E136 /* ViewController.swift */,
 				C1A9E5D720265DD70043E136 /* Main.storyboard */,
+				C1A9E5E92026669B0043E136 /* AddMealViewController.swift */,
+				C1A9E5E7202664FF0043E136 /* HomeViewController.swift */,
+				C1A9E5E5202664A80043E136 /* FindMealTableViewController.swift */,
+				C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */,
+				4D03BD57202696430049BA99 /* AddUserViewController.swift */,
+				4D03BD58202696440049BA99 /* ShowProfileViewController.swift */,
+				4D03BD59202696440049BA99 /* User.swift */,
 				C1A9E5DA20265DD70043E136 /* Assets.xcassets */,
 				C1A9E5DC20265DD70043E136 /* LaunchScreen.storyboard */,
 				C1A9E5DF20265DD70043E136 /* Info.plist */,
@@ -136,7 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A9E5EC20267A100043E136 /* AddMealTableViewController.swift in Sources */,
 				C1A9E5D620265DD70043E136 /* ViewController.swift in Sources */,
+				C1A9E5E6202664A80043E136 /* FindMealTableViewController.swift in Sources */,
+				4D03BD5B202696440049BA99 /* ShowProfileViewController.swift in Sources */,
+				C1A9E5EA2026669B0043E136 /* AddMealViewController.swift in Sources */,
+				4D03BD5C202696440049BA99 /* User.swift in Sources */,
+				4D03BD5A202696440049BA99 /* AddUserViewController.swift in Sources */,
+				C1A9E5E8202664FF0043E136 /* HomeViewController.swift in Sources */,
 				C1A9E5D420265DD70043E136 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
