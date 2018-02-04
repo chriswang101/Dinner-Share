@@ -15,6 +15,7 @@
 		C1828F832026F298006EC7AC /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1828F822026F298006EC7AC /* HomeTableViewController.swift */; };
 		C1828F852026F713006EC7AC /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1828F842026F713006EC7AC /* General.swift */; };
 		C1828F8D202701C8006EC7AC /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1828F8C202701C8006EC7AC /* PageContentViewController.swift */; };
+		C1828F8F20276A07006EC7AC /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1828F8E20276A07006EC7AC /* DetailTableViewController.swift */; };
 		C1A9E5D420265DD70043E136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5D320265DD70043E136 /* AppDelegate.swift */; };
 		C1A9E5D620265DD70043E136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5D520265DD70043E136 /* ViewController.swift */; };
 		C1A9E5D920265DD70043E136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A9E5D720265DD70043E136 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		C1828F822026F298006EC7AC /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTableViewController.swift; path = "/Users/chriswang/Desktop/dinner-share/dinner-share/dinner-share/HomeTableViewController.swift"; sourceTree = "<absolute>"; };
 		C1828F842026F713006EC7AC /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		C1828F8C202701C8006EC7AC /* PageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		C1828F8E20276A07006EC7AC /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		C1A9E5D020265DD70043E136 /* dinner-share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dinner-share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A9E5D320265DD70043E136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1A9E5D520265DD70043E136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				C1A9E5D320265DD70043E136 /* AppDelegate.swift */,
 				C1A9E5D520265DD70043E136 /* ViewController.swift */,
 				C1A9E5D720265DD70043E136 /* Main.storyboard */,
+				C1828F8E20276A07006EC7AC /* DetailTableViewController.swift */,
 				C1828F8C202701C8006EC7AC /* PageContentViewController.swift */,
 				C1828F802026F007006EC7AC /* ShowProfileViewController.swift */,
 				C1C8B6F12026DDBA005D8FC2 /* TabBarViewController.swift */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1828F8F20276A07006EC7AC /* DetailTableViewController.swift in Sources */,
 				C1C8B6F22026DDBB005D8FC2 /* TabBarViewController.swift in Sources */,
 				C1828F852026F713006EC7AC /* General.swift in Sources */,
 				C1A9E5EC20267A100043E136 /* AddMealTableViewController.swift in Sources */,

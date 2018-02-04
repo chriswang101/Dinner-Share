@@ -7,6 +7,17 @@
 
 import UIKit
 
+protocol DetailDelegate: class {
+    func wasTapped(meal: Meal)
+}
+
+extension HomeTableViewController: DetailDelegate {
+    func wasTapped(meal: Meal) {
+        tappedMeal = meal
+        self.performSegue(withIdentifier: "showDetailSegue", sender: self)
+    }
+}
+
 class HomeTableViewController: UITableViewController {
 
     @IBOutlet weak var recommendationsScrollView: UIScrollView!
@@ -21,6 +32,8 @@ class HomeTableViewController: UITableViewController {
     
     
     var frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)
+    
+    var tappedMeal: Meal?
     
     let recommendationMeals = [
         Meal(imageName: "bread.jpg", date: Date(timeIntervalSinceNow: 10000), description: "Simple meals and pleasures", distance: 2.11),
@@ -104,6 +117,25 @@ class HomeTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showDetailSegue") {
+            guard let detailTableViewController = segue.destination as? DetailTableViewController, let tappedMeal_ = tappedMeal else {
+                return
+            }
+            
+            // Configure detailTableViewController
+            detailTableViewController.loadView()
+            detailTableViewController.tableView.separatorStyle = .none
+            
+            detailTableViewController.imageView.image = UIImage(named: tappedMeal_.imageName)
+            detailTableViewController.titleLabel.text = tappedMeal_.description
+            detailTableViewController.dateLabel.text = formatter.string(from: tappedMeal_.date)
+            
+            //detailTableViewController.
+            
+        }
     }
 
     // MARK: - Table view data source

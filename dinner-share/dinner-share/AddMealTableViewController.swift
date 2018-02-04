@@ -16,20 +16,31 @@ class AddMealTableViewController: UITableViewController {
     @IBOutlet weak var peopleCounterPicker: UIPickerView!
     @IBOutlet weak var datePicker: UIDatePicker!
     
-    let peoplePickerNumbers = ["1","2","3","4","5","6","7","8","9"]
+    @IBOutlet weak var mealImage: UIImageView!
     
-    var button: UIButton! = nil
+    
+    @IBAction func pickImageAction(_ sender: UITapGestureRecognizer) {
+        // Make sure textfield keyboards are dismissed properly if selected
+        mealNameTextField.resignFirstResponder()
+        totalCostTextField.resignFirstResponder()
+        
+        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+        let imagePickerController = UIImagePickerController()
+        // Use the photolibrary, not camera
+        imagePickerController.sourceType = .photoLibrary
+        
+        // Make sure ViewController is notified when the user picks an image.
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    
+    let peoplePickerNumbers = ["1","2","3","4","5","6","7","8","9"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         peopleCounterPicker.delegate = self
-        
-        // Initialize button and add to bottom of tableView
-        button = UIButton(frame: CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50))
-        button.setTitle("Done", for: .normal)
-        button.setTitleColor(themeColorRed, for: .normal)
-        self.navigationController?.view.addSubview(button)
         
         mealNameTextField.setBottomBorder()
         totalCostTextField.setBottomBorder()
@@ -50,7 +61,7 @@ class AddMealTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
 
 
@@ -86,4 +97,27 @@ extension AddMealTableViewController: UIPickerViewDataSource {
     }
 }
 
+extension AddMealTableViewController: UIImagePickerControllerDelegate {
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        // The info dictionary may contain multiple representations of the image. You want to use the original.
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        }
+        
+        // Set photoImageView to display the selected image.
+        mealImage.image = selectedImage
+        
+        // Dismiss the picker.
+        dismiss(animated: true, completion: nil)
+    }
+}
 
+extension AddMealTableViewController: UINavigationControllerDelegate {
+    
+}
