@@ -217,10 +217,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rd-YL-4we">
-                                <rect key="frame" x="0.0" y="527" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="517" width="375" height="75"/>
                                 <color key="backgroundColor" red="1" green="0.39341666600000003" blue="0.52020890269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="7tq-Ne-PEl"/>
+                                    <constraint firstAttribute="height" constant="75" id="7tq-Ne-PEl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <state key="normal" title="Sign up">
@@ -237,10 +237,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdP-Qk-eoc">
-                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
                                 <color key="backgroundColor" red="0.71835342272299629" green="0.49426632725040354" blue="0.92865294218063354" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="WBw-Gn-cqp"/>
+                                    <constraint firstAttribute="height" constant="75" id="WBw-Gn-cqp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <state key="normal" title="Login">
@@ -282,7 +282,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="bWp-ei-lCD">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Lr7-qo-tMG" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" automaticallyAdjustsScrollViewInsets="NO" id="Lr7-qo-tMG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Aku-oA-CNN">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -458,9 +458,6 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Home" id="4sA-jY-0AE"/>
                     <navigationItem key="navigationItem" id="Fjg-S9-jJB"/>
-                    <connections>
-                        <outlet property="featuredScrollView" destination="9HF-o1-Gua" id="3HI-7F-QAv"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brn-yy-5V7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -668,10 +665,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAx-qz-wkb">
-                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
                                 <color key="backgroundColor" red="0.71835342270000002" green="0.49426632729999997" blue="0.92865294220000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="ydh-2I-QMQ"/>
+                                    <constraint firstAttribute="height" constant="75" id="ydh-2I-QMQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <state key="normal" title="Finish">

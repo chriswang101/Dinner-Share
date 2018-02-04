@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1480A2FA20269F530083B792 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1480A2F920269F530083B792 /* GoogleService-Info.plist */; };
 		4D03BD5A202696440049BA99 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD57202696430049BA99 /* AddUserViewController.swift */; };
-		4D03BD5B202696440049BA99 /* ShowProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD58202696440049BA99 /* ShowProfileViewController.swift */; };
 		4D03BD5C202696440049BA99 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD59202696440049BA99 /* User.swift */; };
 		4D03BD6320269C4F0049BA99 /* VictorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D03BD6120269C4F0049BA99 /* VictorStoryboard.storyboard */; };
 		4D03BD6520269C670049BA99 /* person-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D03BD6420269C670049BA99 /* person-placeholder.jpg */; };
@@ -21,6 +20,7 @@
 		C1A9E5E8202664FF0043E136 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5E7202664FF0043E136 /* HomeViewController.swift */; };
 		C1A9E5EA2026669B0043E136 /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5E92026669B0043E136 /* AddMealViewController.swift */; };
 		C1A9E5EC20267A100043E136 /* AddMealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */; };
+		C1C8B6F22026DDBB005D8FC2 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C8B6F12026DDBA005D8FC2 /* TabBarViewController.swift */; };
 		D0FF1D23A5D34E4C0B61A553 /* Pods_dinner_share.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1F89912566BF0EE1D873A2 /* Pods_dinner_share.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +44,7 @@
 		C1A9E5E7202664FF0043E136 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C1A9E5E92026669B0043E136 /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
 		C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealTableViewController.swift; sourceTree = "<group>"; };
+		C1C8B6F12026DDBA005D8FC2 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 				C1A9E5D320265DD70043E136 /* AppDelegate.swift */,
 				C1A9E5D520265DD70043E136 /* ViewController.swift */,
 				C1A9E5D720265DD70043E136 /* Main.storyboard */,
+				C1C8B6F12026DDBA005D8FC2 /* TabBarViewController.swift */,
 				C1A9E5E92026669B0043E136 /* AddMealViewController.swift */,
 				C1A9E5E7202664FF0043E136 /* HomeViewController.swift */,
 				C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */,
@@ -251,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C8B6F22026DDBB005D8FC2 /* TabBarViewController.swift in Sources */,
 				C1A9E5EC20267A100043E136 /* AddMealTableViewController.swift in Sources */,
 				C1A9E5D620265DD70043E136 /* ViewController.swift in Sources */,
 				C1A9E5EA2026669B0043E136 /* AddMealViewController.swift in Sources */,
