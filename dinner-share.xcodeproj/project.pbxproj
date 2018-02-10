@@ -12,7 +12,6 @@
 		4D03BD5C202696440049BA99 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03BD59202696440049BA99 /* User.swift */; };
 		4D03BD6520269C670049BA99 /* person-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D03BD6420269C670049BA99 /* person-placeholder.jpg */; };
 		C1828F812026F007006EC7AC /* ShowProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1828F802026F007006EC7AC /* ShowProfileViewController.swift */; };
-		C1828F832026F298006EC7AC /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1828F822026F298006EC7AC /* HomeTableViewController.swift */; };
 		C1828F852026F713006EC7AC /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1828F842026F713006EC7AC /* General.swift */; };
 		C1828F8D202701C8006EC7AC /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1828F8C202701C8006EC7AC /* PageContentViewController.swift */; };
 		C1828F8F20276A07006EC7AC /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1828F8E20276A07006EC7AC /* DetailTableViewController.swift */; };
@@ -23,6 +22,7 @@
 		C1A9E5DE20265DD70043E136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A9E5DC20265DD70043E136 /* LaunchScreen.storyboard */; };
 		C1A9E5EA2026669B0043E136 /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5E92026669B0043E136 /* AddMealViewController.swift */; };
 		C1A9E5EC20267A100043E136 /* AddMealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */; };
+		C1C5BD15202FA57B004CB6E7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C5BD14202FA57B004CB6E7 /* HomeTableViewController.swift */; };
 		C1C8B6F22026DDBB005D8FC2 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C8B6F12026DDBA005D8FC2 /* TabBarViewController.swift */; };
 		D0FF1D23A5D34E4C0B61A553 /* Pods_dinner_share.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1F89912566BF0EE1D873A2 /* Pods_dinner_share.framework */; };
 /* End PBXBuildFile section */
@@ -36,7 +36,6 @@
 		70D5531D7FF9089445C72218 /* Pods-dinner-share.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinner-share.release.xcconfig"; path = "Pods/Target Support Files/Pods-dinner-share/Pods-dinner-share.release.xcconfig"; sourceTree = "<group>"; };
 		9E420FB394A8829105C4B02C /* Pods-dinner-share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dinner-share.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dinner-share/Pods-dinner-share.debug.xcconfig"; sourceTree = "<group>"; };
 		C1828F802026F007006EC7AC /* ShowProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowProfileViewController.swift; sourceTree = "<group>"; };
-		C1828F822026F298006EC7AC /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTableViewController.swift; path = "/Users/chriswang/Desktop/dinner-share/dinner-share/dinner-share/HomeTableViewController.swift"; sourceTree = "<absolute>"; };
 		C1828F842026F713006EC7AC /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		C1828F8C202701C8006EC7AC /* PageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		C1828F8E20276A07006EC7AC /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		C1A9E5DF20265DD70043E136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A9E5E92026669B0043E136 /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
 		C1A9E5EB20267A100043E136 /* AddMealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealTableViewController.swift; sourceTree = "<group>"; };
+		C1C5BD14202FA57B004CB6E7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		C1C8B6F12026DDBA005D8FC2 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				1480A2F920269F530083B792 /* GoogleService-Info.plist */,
-				C1828F822026F298006EC7AC /* HomeTableViewController.swift */,
+				C1C5BD14202FA57B004CB6E7 /* HomeTableViewController.swift */,
 				C1A9E5D320265DD70043E136 /* AppDelegate.swift */,
 				C1A9E5D520265DD70043E136 /* ViewController.swift */,
 				C1A9E5D720265DD70043E136 /* Main.storyboard */,
@@ -259,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C5BD15202FA57B004CB6E7 /* HomeTableViewController.swift in Sources */,
 				C1828F8F20276A07006EC7AC /* DetailTableViewController.swift in Sources */,
 				C1C8B6F22026DDBB005D8FC2 /* TabBarViewController.swift in Sources */,
 				C1828F852026F713006EC7AC /* General.swift in Sources */,
@@ -266,7 +267,6 @@
 				C1A9E5D620265DD70043E136 /* ViewController.swift in Sources */,
 				C1828F812026F007006EC7AC /* ShowProfileViewController.swift in Sources */,
 				C1828F8D202701C8006EC7AC /* PageContentViewController.swift in Sources */,
-				C1828F832026F298006EC7AC /* HomeTableViewController.swift in Sources */,
 				C1A9E5EA2026669B0043E136 /* AddMealViewController.swift in Sources */,
 				4D03BD5C202696440049BA99 /* User.swift in Sources */,
 				4D03BD5A202696440049BA99 /* AddUserViewController.swift in Sources */,
