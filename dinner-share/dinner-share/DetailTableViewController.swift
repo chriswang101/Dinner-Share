@@ -10,6 +10,8 @@ import UIKit
 import MapKit
 
 class DetailTableViewController: UITableViewController {
+    
+    var meal: Meal?
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -18,8 +20,20 @@ class DetailTableViewController: UITableViewController {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var directionsButton: UIButton!
     
+    let formatter = DateFormatter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        formatter.dateFormat = "MMMM dd, yyyy, h:mm a"
+        
+        imageView.image = UIImage(named: meal!.imageName)
+        titleLabel.text = meal!.description
+        dateLabel.text = formatter.string(from: meal!.date)
+        addressLabel.text = "123 Cody Ave Apt 42A\n San Luis Obispo, CA 97261"
+        
+        mapView.showsUserLocation = true
+        
         self.tableView.separatorStyle = .none
         
         // Configure directions button
@@ -45,6 +59,10 @@ class DetailTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0
     }
 
     /*

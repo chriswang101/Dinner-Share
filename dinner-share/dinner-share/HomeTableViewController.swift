@@ -13,7 +13,9 @@ protocol DetailDelegate: class {
 
 extension HomeTableViewController: DetailDelegate {
     func wasTapped(meal: Meal) {
+        print("WasTappedc alled" )
         tappedMeal = meal
+        
         self.performSegue(withIdentifier: "showDetailSegue", sender: self)
     }
 }
@@ -29,7 +31,6 @@ class HomeTableViewController: UITableViewController {
     lazy var topRatedVCs = [UIViewController]()
     
     let formatter = DateFormatter()
-    
     
     var frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)
     
@@ -56,10 +57,10 @@ class HomeTableViewController: UITableViewController {
         var VCs = [UIViewController]()
         for meal in meals {
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "pageContentViewController") as! PageContentViewController
-            //vc.delegate = self
+            vc.delegate = self
             
             vc.loadView()
-            
+            vc.meal = meal
             vc.imageView.image = UIImage(named: meal.imageName)
             vc.descriptionLabel.text = meal.description
             vc.dateLabel.text = formatter.string(from: meal.date)
@@ -121,20 +122,13 @@ class HomeTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showDetailSegue") {
-            guard let detailTableViewController = segue.destination as? DetailTableViewController, let tappedMeal_ = tappedMeal else {
+            guard let detailTableViewController = segue.destination as? DetailTableViewController else {
+                print("retuened")
                 return
             }
             
             // Configure detailTableViewController
-            detailTableViewController.loadView()
-            detailTableViewController.tableView.separatorStyle = .none
-            
-            detailTableViewController.imageView.image = UIImage(named: tappedMeal_.imageName)
-            detailTableViewController.titleLabel.text = tappedMeal_.description
-            detailTableViewController.dateLabel.text = formatter.string(from: tappedMeal_.date)
-            
-            //detailTableViewController.
-            
+            detailTableViewController.meal = tappedMeal
         }
     }
 

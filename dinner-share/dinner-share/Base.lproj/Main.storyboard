@@ -205,6 +205,9 @@
                                                     <state key="normal" title="Done">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="8Ex-LG-T0m" kind="show" id="Id2-tV-QG7"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -718,7 +721,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccV-4L-cuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="ylr-C1-ccD">
                     <connections>
-                        <action selector="imageTap:" destination="6CH-S4-Iwv" id="KXC-Zj-KgQ"/>
+                        <action selector="imageTap:" destination="6CH-S4-Iwv" id="cbl-QL-qyP"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -989,6 +992,6 @@
         <image name="person-placeholder.jpg" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ad4-Ur-ijn"/>
+        <segue reference="Id2-tV-QG7"/>
     </inferredMetricsTieBreakers>
 </document>
